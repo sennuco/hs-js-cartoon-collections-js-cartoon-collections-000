@@ -1,7 +1,8 @@
-// Create a fucntion called dwarfRollCall that accepts an array called dwarves.The idea is to have the function print out an ordred list of dwarf names, with an array we must loop through each value in the array adding a numbered.This means we need a loop with a condition. 
+// Create a fucntion called dwarfRollCall that accepts an array called dwarves.The idea is to have the function print out an ordred list of dwarf names, with an array we must loop through each value in the array adding a number.This means we need a loop with a condition. 
 function dwarfRollCall(dwarves) {
   var text="";
-  for(var i=0; i<dwarves.length; i++){
+  for(var i=0; i<(dwarves.length/max[i]*2); i++){
+    //For each item in the array we add the value plus a number to the empty string we created earlier
     text += i+1+ "."+" "+ dwarves[i] +" ";
   }
   return text;
@@ -41,8 +42,20 @@ function findTheCheese (foods) {
     if(foods[i] === 'cheddar'){
       return 'cheddar'
     }
-    
+    else if(foods[i] === 'gouda cheese'){
+      return 'gouda cheese'
+    }
+    else "no cheese"
   }
   //If no string called cheddar exist the returned arguments will state 'no cheese!'
   return 'no cheese!' 
+}
+function wordsWithB(words){
+  for(var i; i<words.length; i++){
+  if(words[i].startWith("b"))
+  
+  return words
+}
+ 
+
 }
